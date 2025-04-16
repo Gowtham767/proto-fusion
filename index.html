@@ -2,82 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Proto-Fusion</title>
+  <title>Proto-Fusion Timeline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- AOS (Animate On Scroll) CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .gold-text {
-      color: #bfa046;
-    }
-    .gold-gradient {
-      background: linear-gradient(to right, #ffd700, #ffb700);
-    }
-  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#fefbe9] text-gray-800">
+<body class="text-gray-800">
 
-  <!-- Header Section -->
-  <header class="text-center py-10 gold-gradient text-white shadow-md">
-    <h1 class="text-3xl md:text-5xl font-bold" data-aos="fade-down">Anna University Regional Campus Madurai</h1>
-    <h2 class="text-xl md:text-3xl mt-2" data-aos="fade-down" data-aos-delay="300">Department of Computer Science and Engineering</h2>
-  </header>
+  <!-- Timeline Section -->
+  <section class="py-16 bg-[#fff8dc]" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold gold-text mb-14" data-aos="zoom-in">Event Timeline</h3>
 
-  <!-- Event Description -->
-  <section class="max-w-4xl mx-auto px-4 py-10 text-center" data-aos="fade-up">
-    <h3 class="text-2xl font-semibold gold-text mb-4">Event: Proto-Fusion</h3>
-    <p class="text-lg leading-relaxed">
-      <span class="font-semibold text-yellow-700">Proto-Fusion</span> is a grand technical celebration blending innovation, creativity, and collaboration.  
-      Hosted by the Department of CSE, it unites all engineering minds through workshops, competitions, and tech exhibitions, creating a platform to shine.
-    </p>
-  </section>
+      <div class="timeline-container">
+        <div class="timeline-grid">
 
-  <!-- Department Themes -->
-  <section class="bg-white py-10" data-aos="fade-up" data-aos-delay="200">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center gold-text mb-6">Themes by Departments</h3>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg font-medium">
-        <li class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up">✨ CSE - AI & Cyber Security Challenges</li>
-        <li class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up">✨ ECE - Embedded Systems & IoT</li>
-        <li class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up">✨ EEE - Smart Energy & Automation</li>
-        <li class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up">✨ MECH - Robotics & Design Innovation</li>
-      </ul>
-    </div>
-  </section>
+          <!-- Event 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="font-bold text-lg mb-2">📅 01-May-2025</p>
+              <p class="text-sm font-medium">Event Announcement</p>
+            </div>
+          </div>
 
-  <!-- Timeline -->
-  <section class="py-10 bg-[#fff8dc]" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-bold gold-text mb-8">Event Timeline</h3>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow-lg border border-yellow-300" data-aos="zoom-in">📅 01-May-2025<br><strong>Event Announcement</strong></div>
-        <div class="bg-white p-4 rounded-lg shadow-lg border border-yellow-300" data-aos="zoom-in">📅 10-May-2025<br><strong>Last Date for Registration</strong></div>
-        <div class="bg-white p-4 rounded-lg shadow-lg border border-yellow-300" data-aos="zoom-in">📅 15-May-2025<br><strong>Prelims and Screening</strong></div>
-        <div class="bg-white p-4 rounded-lg shadow-lg border border-yellow-300" data-aos="zoom-in">📅 20-May-2025<br><strong>Final Round and Prize Distribution</strong></div>
+          <!-- Event 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="font-bold text-lg mb-2">📅 10-May-2025</p>
+              <p class="text-sm font-medium">Last Date for Registration</p>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="font-bold text-lg mb-2">📅 15-May-2025</p>
+              <p class="text-sm font-medium">Prelims and Screening</p>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="font-bold text-lg mb-2">📅 20-May-2025</p>
+              <p class="text-sm font-medium">Final Round & Prize Distribution</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Register Now Button -->
-  <section class="py-12 text-center" data-aos="fade-up">
-    <h3 class="text-xl font-semibold mb-6 gold-text">Excited to Join Us?</h3>
-    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="bg-yellow-500 text-white px-10 py-3 rounded-full text-lg shadow-xl hover:bg-yellow-600 transition-all duration-300">
-      🎉 Register Now
-    </a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-yellow-700 text-white text-center py-6">
-    © 2025 Proto-Fusion | Department of CSE, Anna University RC Madurai
-  </footer>
-
-  <!-- AOS Initialization -->
+  <!-- AOS Init -->
   <script>
     AOS.init({
       duration: 1000,
