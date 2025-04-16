@@ -1,15 +1,25 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8dc;
   }
   
-  .gold-text {
-    color: #bfa046;
+  .theme-card {
+    background: #fffbe6;
+    border-left: 6px solid #ffcc00;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-card:hover {
+    transform: translateY(-5px);
   }
   
   .timeline-container {
     position: relative;
-    padding: 2rem 0;
+    margin-top: 2rem;
   }
   
   .timeline-container::before {
@@ -19,66 +29,50 @@ body {
     bottom: 0;
     left: 50%;
     width: 4px;
-    background-color: #e6c200;
+    background: #ffd700;
     transform: translateX(-50%);
     z-index: 0;
   }
   
   .timeline-item {
     position: relative;
-    margin-bottom: 4rem;
-    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
   }
   
-  .timeline-dot {
-    width: 32px;
-    height: 32px;
-    background-color: #ffcc00;
-    border: 4px solid white;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    box-shadow: 0 0 10px #e6c200;
+  .timeline-item:nth-child(even) {
+    align-items: flex-end;
   }
   
   .timeline-content {
     background: white;
     border: 2px solid #ffe680;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 400px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 1.25rem;
-    border-radius: 0.75rem;
     position: relative;
-    z-index: 20;
-    width: 90%;
-    margin: 0 auto;
-    transition: all 0.3s ease;
-    text-align: center;
+    z-index: 1;
+    transition: transform 0.3s ease;
   }
   
   .timeline-content:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
   
-  @media (min-width: 768px) {
-    .timeline-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-    }
-  
-    .timeline-dot {
-      top: -2rem;
-    }
-  
-    .timeline-content {
-      margin-top: 2rem;
-    }
-  
-    .timeline-container::before {
-      left: 50%;
-    }
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ffc107;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
   }
   

@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Proto-Fusion Timeline</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proto-Fusion | AU RC Madurai</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS (Animate On Scroll) CDN -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Animate On Scroll (AOS) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="text-gray-800">
+<body class="bg-[#fffaf0] text-gray-900">
 
-  <!-- Timeline Section -->
-  <section class="py-16 bg-[#fff8dc]" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto text-center">
-      <h3 class="text-3xl font-bold gold-text mb-14" data-aos="zoom-in">Event Timeline</h3>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-yellow-400 to-yellow-600 py-10 text-center text-white shadow-xl" data-aos="fade-down">
+    <h1 class="text-4xl font-bold">Anna University Regional Campus Madurai</h1>
+    <h2 class="text-2xl mt-2 font-semibold">Department of Computer Science and Engineering</h2>
+  </header>
 
+  <!-- Event Description -->
+  <section class="py-12 px-6 text-center max-w-4xl mx-auto" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-yellow-700 mb-4">Event: Proto-Fusion</h3>
+    <p class="text-lg leading-relaxed">
+      Proto-Fusion is a dynamic tech event that blends innovation and collaboration. It brings students together to showcase their skills through workshops, tech talks, and inter-department competitions.
+    </p>
+  </section>
+
+  <!-- Department Themes -->
+  <section class="bg-white py-12" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center text-yellow-600 mb-10">Themes by Departments</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="theme-card">🔹 CSE - AI & Cyber Security Challenges</div>
+        <div class="theme-card">🔹 ECE - Embedded Systems & IoT</div>
+        <div class="theme-card">🔹 EEE - Smart Energy & Automation</div>
+        <div class="theme-card">🔹 MECH - Robotics & Design Innovation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-16 bg-[#fff3cd]" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h3 class="text-3xl font-bold text-yellow-800 mb-14">Event Timeline</h3>
       <div class="timeline-container">
-        <div class="timeline-grid">
-
-          <!-- Event 1 -->
-          <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="font-bold text-lg mb-2">📅 01-May-2025</p>
-              <p class="text-sm font-medium">Event Announcement</p>
-            </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="dot"></div>
+          <div class="timeline-content">
+            <h4 class="font-semibold">01-May-2025</h4>
+            <p>Event Announcement</p>
           </div>
+        </div>
 
-          <!-- Event 2 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="font-bold text-lg mb-2">📅 10-May-2025</p>
-              <p class="text-sm font-medium">Last Date for Registration</p>
-            </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="dot"></div>
+          <div class="timeline-content">
+            <h4 class="font-semibold">10-May-2025</h4>
+            <p>Last Date for Registration</p>
           </div>
+        </div>
 
-          <!-- Event 3 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="font-bold text-lg mb-2">📅 15-May-2025</p>
-              <p class="text-sm font-medium">Prelims and Screening</p>
-            </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="dot"></div>
+          <div class="timeline-content">
+            <h4 class="font-semibold">15-May-2025</h4>
+            <p>Prelims and Screening</p>
           </div>
+        </div>
 
-          <!-- Event 4 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="font-bold text-lg mb-2">📅 20-May-2025</p>
-              <p class="text-sm font-medium">Final Round & Prize Distribution</p>
-            </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="dot"></div>
+          <div class="timeline-content">
+            <h4 class="font-semibold">20-May-2025</h4>
+            <p>Final Round & Prize Distribution</p>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AOS Init -->
+  <!-- Register Button -->
+  <section class="py-12 text-center" data-aos="zoom-in">
+    <h3 class="text-xl font-semibold mb-6">Excited to Join Us?</h3>
+    <a href="https://forms.gle/your-google-form-link" target="_blank"
+       class="bg-yellow-600 hover:bg-yellow-800 text-white px-8 py-3 rounded-full text-lg shadow-lg transition">
+      Register Now
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    © 2025 Proto-Fusion | Department of CSE, Anna University RC Madurai
+  </footer>
+
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
